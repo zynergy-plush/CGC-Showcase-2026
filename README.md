@@ -10,3 +10,7 @@ Recently Removed ⛔:
 1. Games Page.
 2. Image from Home page.
 3. Description from home page.
+
+Recently Added ✅:
+1. Workshops Page.
+2. New pictures dedicated to Workshops Page.
