@@ -1,5 +1,4 @@
-This repo contains the files for the CGC club fair.
-
+This repo contains the files for the CGC-Showcase-2026
 
 Usage⏬:
 1. Download the folder
@@ -45,3 +44,4 @@ Bugs 🐜:
 
 
 ❗Note: Use the code files for inspiration, not making something 99.67% similar to this project.
+
