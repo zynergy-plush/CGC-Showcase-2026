@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+body {
+  background: #001027; /* keeps your dark tone */
+  color: #fff;
+  min-height: 100vh;
+  display: block; /* remove center squeeze */
+  overflow-x: hidden;
+}
+
+/* ===== Background Video ===== */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(75%) blur(5px);
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+    display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+
+
+/* ===== Header ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.logo .super sup {
+  color: #00abf0;
+  font-size: 15px;
+}
+
+.logo:hover {
+  color: #10a2db;
+  text-shadow: 0 0 25px #98d2ea;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #00abf0;
+  text-shadow: 0 0 25px #00abf0;
+}
+
+/* ===== Centered Video Section ===== */
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px; /* below header */
+  width: 100%;
+}
+
+.video-box {
+  width: 50%;
+  max-width: 750px;
+  border: 3px solid #00abf0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 171, 240, 0.3);
+  transition: 0.4s ease;
+}
+
+.video-box video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.video-box:hover {
+  box-shadow: 0 0 40px #00abf0;
+  cursor: pointer;
+}
+
+/* ===== Section Heading ===== */
+.section-heading {
+  text-align: center;
+  color: #00abf0;
+  font-size: 2.5rem;
+  margin: 60px 0 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px #00abf0;
+}
+
+/* ===== Carousel Wrapper ===== */
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto 80px auto;
+  padding: 20px 0;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.wrapper .card {
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.wrapper .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 10px #00abf0;
+}
+
+.card .card-image {
+  position: relative;
+}
+
+.card .card-image img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 22px;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+.card .card-image .card-tag {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 0.75rem;
+  color: #00abf0;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.card .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 25px;
+}
+
+.card .card-content .card-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.card .card-content .card-text {
+  color: #d6d6d6;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ===== Card Footer ===== */
+.card .card-footer {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  padding-top: 15px;
+  justify-content: space-between;
+}
+
+.card .card-profile {
+  display: flex;
+  align-items: center;
+}
+
+.card .card-profile img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.card .card-profile-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.card .card-profile-role {
+  font-size: 0.8rem;
+  color: #7A7A7A;
+}
+
+/* ===== Buttons ===== */
+.swiper-button {
+  position: absolute;
+  bottom: 15px;
+  left: 65px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.swiper-button:hover {
+  color: #5dd1ff;
+}
+
+.transparent-button {
+  position: absolute;
+  bottom: 15px;
+  right: 60px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #00abf0;
+  transition: 0.3s;
+}
+
+.transparent-button:hover {
+  background-color: #00abf0;
+  color: #fff;
+}
+
+/* ===== Swiper Pagination ===== */
+.wrapper .swiper-pagination-bullet {
+  height: 15px;
+  width: 15px;
+  background: #5dd1ff;
+  opacity: 1;
+}   
+
+.wrapper .swiper-pagination-bullet-active {
+  background: #00abf0;
+}
+
+.wrapper .swiper-pagination-bullet-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #0e516c;
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: autoplay-loading 5s linear forwards;
+}
+
+.container:hover .wrapper .swiper-pagination-bullet-active::before {
+  animation-play-state: paused;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+    size: 10px;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-sci a:hover {
+    color: #081b29;
+    box-shadow: 0 0 25px #00abf0;
+}
+
+/* ===== Responsive Fixes ===== */
+@media (max-width: 900px) {
+  .video-box {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 95%;
+    margin: 0 auto 50px auto;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .wrapper :where(.swiper-button-prev, .swiper-button-next) {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .video-box {
+    width: 95%;
+  }
+
+  .card .card-content .card-title {
+    font-size: 1rem;
+  }
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+.modal .close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+  transition: 0.3s;
+}
+
+.modal .close:hover {
+  color: #00abf0;
+}
+
+.modal .modal-swiper {
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  border-radius: 12px;
+  background: #181818;
+}
+
+.modal .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* ===== Video Modal Styling ===== */
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.video-modal video {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00abf0;
+}
+
+.video-modal .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.video-modal .close:hover {
+  color: #00abf0;
+}

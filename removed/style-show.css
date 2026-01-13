@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #001027;
+    color: #ededed;
+    padding-top: 80px; /* Adjusted to match navbar height */
+}
+
+
+.video-container {
+    position: fixed; /* Ensures video stays fixed as background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Video element styling */
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures it covers the entire screen */
+    transition: opacity 0.3s ease-in-out;
+    filter: brightness(75%);
+    filter: blur(5px);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Optional: Adds a blur effect */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    height: 60px; /* Ensure a proper navbar height */
+}
+
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.logo .super sup {
+    color: #00abf0;
+    font-size: 15px;
+    
+}
+
+.logo:hover {
+    color: #10a2db;
+    text-shadow: 0 0 25px #98d2ea;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed; 
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+    text-shadow: 0 0 25px #00abf0;
+}
+
+/* Info Section Styling */
+.info-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info-section h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Example Images Grid */
+.example-images {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.example-images h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.image-grid img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
