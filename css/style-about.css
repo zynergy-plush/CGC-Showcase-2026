@@ -60,7 +60,7 @@ body {
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
-    transition: .3s;
+    transition: .3s; 
 }
 
 .logo .super sup {
@@ -161,9 +161,8 @@ button:hover {
     padding: 40px;
     border-radius: 15px;
     -webkit-backdrop-filter: blur(15px); /* Safari support */
-    backdrop-filter: blur(15px); /* frosted glass effect 
+    backdrop-filter: blur(15px); /* frosted glass effect */
 }
-
 /* Inner section styling */
 .content-section {
     line-height: 1.9;
