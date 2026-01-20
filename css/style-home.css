@@ -15,23 +15,28 @@ body {
 }
 
 .video-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        z-index: -1; 
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
 
 .video-container video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: opacity 0.3s ease-in-out;
-        filter: brightness(75%);
-        filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out; /* Matches your existing opacity transition */
+    filter: brightness(0.7) blur(2.5px); /* Default brightness */
 }
+
+body:hover .video-container video {
+    filter: brightness(1.1) blur(2.5px); /* Increase to 120%; adjust as needed (e.g., 1.3 for brighter) */
+}
+
+
 
 .header{
     position: fixed;
@@ -55,13 +60,13 @@ body {
 }
 
 .logo .super sup {
-    color: #00abf0;
+    color: #12c0c9;
     font-size: 15px;
     
 }
 
 .logo:hover {
-    color: #10a2db;
+    color: #12c0c9;
     text-shadow: 0 0 25px #98d2ea;
 }
 
@@ -77,8 +82,8 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #00abf0;
-    text-shadow: 0 0 25px #00abf0;
+    color: #12c0c9;
+    text-shadow: 0 0 25px #12c0c9;
 }
 
 .home {
@@ -118,13 +123,13 @@ body {
 .home-content h3  {
     font-size: 28px;
     font-weight: 700;
-    color: #00abf0;
+    color: #12c0c9;
     
 
 }
 
 .home-content h3 span {
-    color: #00abf0;
+    color: #12c0c9;
 }
 
 .home-content p {
@@ -136,7 +141,7 @@ body {
 }
 
 .home-content p span .sheza {
-    color: #00abf0;
+    color: #12c0c9;
 }
 
 .home-content p a {
@@ -162,8 +167,8 @@ body {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
+    background: #12c0c9;
+    border: 2px solid #12c0c9;
     border-radius: 8px;
     font-size: 19px;
     color: #081b29;
@@ -176,14 +181,14 @@ body {
 }
 
 .btn-box a:hover {
-    color: #00abf0;
-    border: 2px solid #00abf0;
-    box-shadow: 0 0 25px #00abf0
+    color: #12c0c9;
+    border: 2px solid #12c0c9;
+    box-shadow: 0 0 25px #12c0c9
 }
 
 .btn-box a:nth-child(2) {
     background: transparent;
-    color: #00abf0;
+    color: #12c0c9;
 }
 
 .btn-box a:nth-child(2):hover {
@@ -207,7 +212,7 @@ body {
 }
 
 .btn-box a:nth-child(2)::before {
-    background: #00abf0;
+    background: #12c0c9;
 }
 
 .home-sci {
@@ -226,10 +231,10 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #00abf0;
+    border: 2px solid #12c0c9;
     border-radius: 50%;
     font-size: 20px;
-    color: #00abf0;
+    color: #12c0c9;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
@@ -243,7 +248,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #00abf0;
+    background: #12c0c9;
     z-index: -1;
     transition: .5s;
     size: 10px;
@@ -255,5 +260,5 @@ body {
 
 .home-sci a:hover {
     color: #081b29;
-    box-shadow: 0 0 25px #00abf0;
+    box-shadow: 0 0 25px #12c0c9;
 }

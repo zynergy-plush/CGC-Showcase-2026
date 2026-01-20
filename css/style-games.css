@@ -64,7 +64,7 @@ body {
 }
 
 .logo .super sup {
-    color: #00abf0;
+    color: #12c0c9;
     font-size: 15px;
     
 }
@@ -85,8 +85,8 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #00abf0;
-    text-shadow: 0 0 25px #00abf0;
+    color: #12c0c9;
+    text-shadow: 0 0 25px #12c0c9;
 }
 
 .cards {
@@ -98,14 +98,14 @@ body {
     /* left: 10px; */
     margin-top: 100px;
     border-radius: 15px;
-    border: 2px solid #00abf0;
+    border: 2px solid #12c0c9;
     overflow: hidden;
     transition: .5s;
     display: inline-block;
 }
 
 .cards:hover {
-    box-shadow: 0 0 25px #00abf0;
+    box-shadow: 0 0 25px #12c0c9;
 }
 
 

@@ -28,11 +28,11 @@ body {
 .video-container video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures it covers the entire screen */
-    transition: opacity 0.3s ease-in-out;
-    filter: brightness(75%);
-    filter: blur(5px);
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out; /* Matches your existing opacity transition */
+    filter: brightness(1); /* Default brightness */
 }
+
 
 ::-webkit-scrollbar {
     width: 1px;
@@ -64,7 +64,7 @@ body {
 }
 
 .logo .super sup {
-    color: #00abf0;
+    color: #12c0c9;
     font-size: 15px;
     
 }
@@ -85,8 +85,8 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #00abf0;
-    text-shadow: 0 0 25px #00abf0;
+    color: #12c0c9;
+    text-shadow: 0 0 25px #12c0c9;
 }
 
 .cards {
@@ -98,14 +98,14 @@ body {
     /* left: 10px; */
     margin-top: 100px;
     border-radius: 15px;
-    border: 2px solid #00abf0;
+    border: 2px solid #12c0c9;
     overflow: hidden;
     transition: .5s;
     display: inline-block;
 }
 
 .cards:hover {
-    box-shadow: 0 0 25px #00abf0;
+    box-shadow: 0 0 25px #12c0c9;
 }
 
 
@@ -124,11 +124,11 @@ body {
 }
 
 .description .ratri {
-    color: #ff8e03;
+    color: #12c0c9;
 }
 
 .description .sheza {
-    color: #03ff20;
+    color: #12c0c9;
 }
 
 button {
@@ -164,19 +164,19 @@ button:hover {
 
 /* ZYNERGY card (green glow) */
  .zynergy-card {
-    border-color: #03ff20;
+    border-color: #12c0c9;
 }
 .zynergy-card:hover {
-    box-shadow: 0 0 25px #03ff20, 0 0 50px #03ff20;
+    box-shadow: 0 0 25px #12c0c9, 0 0 50px #12c0c9;
     transition: .4s;
 }
 
 /* ELICTRUX card (orange glow) */
 .elictrux-card {
-    border-color: #ff8e03;
+    border-color: #12c0c9;
 }
 .elictrux-card:hover {
-    box-shadow: 0 0 25px #ff8e03, 0 0 50px #ff8e03;
+    box-shadow: 0 0 25px #12c0c9, 0 0 50px #12c0c9;
     transition: .4s;
 }
 
