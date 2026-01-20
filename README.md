@@ -14,3 +14,9 @@ Recently Removed ⛔:
 Recently Added ✅:
 1. Workshops Page.
 2. New pictures dedicated to Workshops Page.
+3. Added brightness increase on hover.
+
+Recently Changed ⌚:
+1. Changed color scheme globally (across all pages).
+2. Changed background globally (across all pages)
+3. Fixed inconsistent blur effects.
